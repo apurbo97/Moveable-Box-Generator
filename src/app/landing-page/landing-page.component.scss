@@ -1,0 +1,28 @@
+.main-box{
+    border: 1px solid rgb(133, 131, 131);
+    width: 1000px;
+    height: 600px;
+}
+
+.inner-box {
+    border: solid 1px #ccc;
+    cursor: move;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 4px;
+    margin-right: 5px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+
+  button{
+      margin: 10px 5px;
+  }
+  
+
+.active{
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}

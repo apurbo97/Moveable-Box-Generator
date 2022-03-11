@@ -1,0 +1,33 @@
+<button
+(click)="addBoxs()"
+mat-button mat-raised-button color="primary"
+>
+    Add Box
+</button>
+<button
+(click)="deleteBox()"
+mat-button mat-raised-button color="primary"
+>
+    Delete Box
+</button>
+<mat-slide-toggle [(ngModel)]="isUseKey">Use Keyboard</mat-slide-toggle>
+<hr>
+<div class="main-box">
+    <ng-container *ngFor="let box of innerBoxs">
+        <div
+        [ngStyle]="
+            {
+                'background-color': box.boxColor,
+                'z-index': box.zindex
+            }
+            "
+        id="{{box.id}}"
+        class = "inner-box"
+        [ngClass]="{'active': box.selected}" 
+        cdkDragBoundary=".main-box" 
+        cdkDrag
+        (click)="innerBokClick(box)">
+        </div>
+    </ng-container>
+    
+</div>
