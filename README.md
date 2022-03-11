@@ -7,9 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - Install [Node.js] which includes [Node Package Manager][npm]
 
-Install the Angular CLI globally:
-
-- npm install -g @angular/cli
+- Install the Angular CLI globally: npm install -g @angular/cli
 
 # Steps to run:
 
